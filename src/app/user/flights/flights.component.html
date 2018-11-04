@@ -1,0 +1,17 @@
+<div class="flights">
+  <h2>Flights:</h2>
+  <div class="ui card flightCard" *ngFor="let flight of flights">
+    <div class="content">
+      <div class="header">{{flight.mission_name}} - {{flight.rocket.rocket_name}}</div>
+      <img class="ui image" [src]="flight.links.mission_patch">
+      <div class="ui text description">
+        <p><strong>Flight Number:</strong> {{flight.flight_number}}</p>
+        <p><strong>Mission Name:</strong> {{flight.mission_name}}</p>
+        <p><strong>Launch Year:</strong> {{flight.launch_year}}</p>
+        <p><strong>Rocket Name:</strong> {{flight.rocket.rocket_name}}</p>
+        <p><strong>Rocket Type:</strong> {{flight.rocket.rocket_type}}</p>
+      </div>
+      <button class="ui primary button center" (click)="goToLaunch()">See Launch Site</button>
+    </div>
+  </div>
+</div>

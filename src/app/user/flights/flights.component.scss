@@ -1,0 +1,20 @@
+.flights{
+  padding: 20px;
+  text-align: center;
+  .flightCard{
+    margin-left: 20px;
+    display: inline-block;
+    .header{
+      text-align: center;
+      margin: 10px auto;
+    }
+    .description{
+      margin: 20px auto;
+    }
+  }
+}
+
+.center{
+  margin:auto;
+  display: block;
+}
