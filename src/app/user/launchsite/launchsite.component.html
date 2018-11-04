@@ -1,3 +1,14 @@
-<p>
-  launchsite works!
-</p>
+<div class="launch">
+  <h2>Launch Site:</h2>
+  <div class="ui card launchCard">
+    <div class="content" *ngIf="launchSite">
+      <div class="header">{{launchSite.site_name_long}}</div>
+      <div class="ui text description">
+        <p><strong>Site Id:</strong> {{launchSite.site_id}}</p>
+        <p><strong>Site Name:</strong> {{launchSite.site_name}}</p>
+        <p><strong>Complete Name:</strong> {{launchSite.site_name_long}}</p>
+      </div>
+    </div>
+    <button class="ui primary button center" (click)="goBack()">Go Back</button>
+  </div>
+</div>

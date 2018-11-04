@@ -6,18 +6,19 @@ import { catchError, map, tap } from 'rxjs/operators';
 
 @Injectable()
 export class FlightService {
-  private flightsUrl = 'https://api.spacexdata.com/v2/launches';
+  private flightsUrlV2 = 'https://api.spacexdata.com/v2/launches';
+  private flightsUrlV3 = 'https://api.spacexdata.com/v3/launches';
 
   constructor(private _http: HttpClient) { }
 
   /** GET flights from the server */
   getFlights(): Observable<Launch[]> {
-    return this._http.get<any>(this.flightsUrl);
+    return this._http.get<any>(this.flightsUrlV2);
   }
 
   /* GET Launch by Flight Number */
   getLaunch(flight_number: number): Observable<Launch> {
-    return this._http.get<any>(this.flightsUrl + "/" + flight_number);
+    return this._http.get<any>(this.flightsUrlV3 + "/" + flight_number);
   }
 
   /**

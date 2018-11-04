@@ -1,9 +1,17 @@
-.dashboardCard{
-  width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px !important;
-  .description{
-    margin-top: 5px;
+.dashboard{
+  padding: 20px;
+  text-align: center;
+  .dashboardCard{
+    margin-left: 20px;
+    display: inline-block;
+    width: 90%;
+    .description{
+      margin: 20px auto;
+    }
   }
+}
+
+.center{
+  margin:auto;
+  display: block;
 }

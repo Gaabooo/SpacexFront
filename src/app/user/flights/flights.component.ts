@@ -27,8 +27,4 @@ export class FlightsComponent implements OnInit {
   getFlights(): void {
     this.flightService.getFlights().subscribe(flights => this.flights = flights);
   }
-
-  goToLaunch(): void {
-
-  }
 }

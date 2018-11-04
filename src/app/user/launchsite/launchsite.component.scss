@@ -1,0 +1,15 @@
+.launch{
+  padding: 20px;
+  text-align: center;
+  .launchCard{
+    margin-left: 20px;
+    display: inline-block;
+    .header{
+      text-align: center;
+      margin: 10px auto;
+    }
+    .description{
+      margin: 20px auto;
+    }
+  }
+}

@@ -11,7 +11,7 @@
         <p><strong>Rocket Name:</strong> {{flight.rocket.rocket_name}}</p>
         <p><strong>Rocket Type:</strong> {{flight.rocket.rocket_type}}</p>
       </div>
-      <button class="ui primary button center" (click)="goToLaunch()">See Launch Site</button>
+      <button class="ui primary button center" routerLink="/flights/{{flight.flight_number}}">See Launch Site</button>
     </div>
   </div>
 </div>

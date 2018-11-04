@@ -1,13 +1,15 @@
-<div class="ui top attached demo menu">
+<div class="ui top attached menu">
   <a class="item" (click)="sidebar.toggle()">
     <i class="sidebar icon"></i> Menu
   </a>
-  <p class="item"> Spacex App</p>
+  <a class="sidebar icon item spaceXLogo">
+    <img class="ui image spacexIcon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/SpaceX-Logo.svg/2000px-SpaceX-Logo.svg.png">
+  </a>
 </div>
 <sui-sidebar-container class="ui bottom attached segment">
   <sui-sidebar class="inverted vertical" #sidebar>
-    <a class="item" routerLink="/dashboard">Dashboard</a>
     <a class="item" routerLink="/flights">Flights</a>
+    <a class="item" routerLink="/dashboard">About Us</a>
   </sui-sidebar>
   <sui-sidebar-sibling [isDimmedWhenVisible]="true">
     <router-outlet></router-outlet>
