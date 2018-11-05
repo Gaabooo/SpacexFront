@@ -10,3 +10,7 @@ This project requires NPM and AngularCLI. To Install them go to:
 ## Test
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+## Known Issues:
+
+- The Flight Cards don't have the same hight (It probably has to do with the image size);
